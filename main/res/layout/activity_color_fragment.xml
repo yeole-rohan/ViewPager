@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_color_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="com.example.android.viewpager.ColorFragment"
+    android:weightSum="1">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_weight="0.32"
+        android:src="@android:drawable/alert_light_frame"/>
+    <TextView
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Heading"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Matter"
+        android:gravity="center"
+        android:id="@+id/textView" />
+
+
+</LinearLayout>
