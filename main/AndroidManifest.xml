@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.viewpager">
-
-    <!-- To auto-complete the email text field in the login form with the user's emails -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.READ_PROFILE" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    package="com.example.lenovo.notes">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -20,14 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NumberFragment" />
+        <!--Registered the Activity -->
         <activity
-            android:name=".LoginActivityFragment"
-            android:label="@string/title_activity_login" />
-        <activity android:name=".PharaseFragment" />
-        <activity android:name=".ColorFragment" />
-        <activity android:name=".FamilyFragment" />
-        <activity android:name=".NewsFragment"></activity>
+            android:name=".AddNote"
+            android:label="Add a Note"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>
